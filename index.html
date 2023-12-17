@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"/>
+</head>
+<body class="bg-green-300">
+
+    <div class="header bg-black text-white h-12 flex justify-center items-center">
+            <h1 class="text-2xl uppercase">rock paper scissor</h1>
+    </div>
+
+    <div class="choises flex justify-center mt-28 h-44 items-center gap-12">
+        <div class="choise flex  flex-col items-center " id="rock">
+            <img src="./images/rock.png" alt="rock img" class="rounded-full h-48 w-48 object-cover  cursor-pointer hover:opacity-75 shadow-2xl border-black border-solid border-4 duration-200">
+            <h3 class="mt-6 font-bold text-lg ">STONE</h3>
+        </div>
+        <div class="choise flex  flex-col items-center" id="paper">
+            <img src="./images/paper.png" alt="paper img"  class="rounded-full h-48 w-48 object-cover  cursor-pointer hover:opacity-75  shadow-2xl border-black border-solid border-4 duration-200">
+            <h1 class="mt-6 font-bold text-lg">PAPER</h1>
+        </div>
+        <div class="choise flex  flex-col items-center" id="scissor">
+            <img src="./images/scissors.png" alt="scissor img"  class="rounded-full h-48 w-48 object-cover  cursor-pointer hover:opacity-75  shadow-2xl border-black border-solid border-4 duration-200" >
+            <h1 class="mt-6 font-bold text-lg">SCISSOR</h1>
+        </div>
+    </div>
+
+    <div class="score-board h-22  mt-28 flex justify-center gap-12 md:mt-20">
+        <div class="userscore">
+        <div class="font-bold text-2xl md:text-lg">Score</div>
+        <p id="userScore" class="ml-4 text-3xl md:text-lg">0</p>
+        </div>
+
+        <div class="comscore">
+        <div class="font-bold text-2xl md:text-lg">Score</div>
+        <p id="comScore" class="ml-4 text-3xl md:text-lg">0</p>
+        </div>
+    </div>
+
+    <div class="para  flex justify-center">
+    <p class=" p-6 font-bold  mt-14   text-white rounded-lg text-lg md:mt-10 md:p-4" id="result"></p>
+    </div>
+
+    
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
